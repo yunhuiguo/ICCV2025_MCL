@@ -1,0 +1,690 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="keywords" content="ICCV, workshop, computer vision, generative AI, HCI, Accessibility">
+
+  <link rel="shortcut icon" href="static/img/site/favicon_b.png">
+
+  <title>CV4A11y@ICCV25</title>
+  <meta name="description" content="CV4A11y, ICCV 2025 Workshop">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="Vision Foundation Models and Generative AI for Accessibility Workshop"/>
+  <meta property="og:url" content="https://cv4a11y.github.io/ICCV2025"/>
+  <meta property="og:description" content="CV4A11y, ICCV 2025 Workshop"/>
+  <meta property="og:site_name" content="Vision Foundation Models and Generative AI for Accessibility Workshop"/>
+  <meta property="og:image" content="https://cv4a11y.github.io/ICCV2025/static/img/site/teaser.jpg"/>
+
+  <!--Twitter Card Stuff-->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Vision Foundation Models and Generative AI for Accessibility Workshop"/>
+  <meta name="twitter:image" content="https://cv4a11y.github.io/ICCV2025/static/img/site/teaser.jpg">
+  <meta name="twitter:url" content="https://cv4a11y.github.io/ICCV2025"/>
+  <meta name="twitter:description" content="CV4A11y, ICCV 2025 Workshop"/>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+  <link rel="stylesheet" href="static/css/main.css" media="screen,projection">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+  <style>
+
+    .people-pic {
+      max-width: 125px;
+      max-height: 125px;
+      /*width:300px;*/
+      /*height:300px;*/
+      object-fit: cover;
+      border-radius: 50%;
+  }
+  </style>
+</head>
+
+  <body>
+
+    <!-- <div class="top-strip"></div> -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"></a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#cfp">Call for papers</a></li>
+        <li><a href="#dates">Schedule</a></li>
+        <li><a href="#speakers">Invited Speakers</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Past Workshops <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../CVPR2021/index.html" target="__blank">CVPR 2021</a></li>
+            <li><a href="../ECCV2022/" target="__blank">ECCV 2022</a></li>
+          </ul>
+        </li> -->
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="container">
+      <div class="page-content">
+          <p><br /></p>
+<div class="row">
+  <div class="col-xs-12">
+    <center><h1>Workshop on Vision Foundation Models and Generative AI for Accessibility: Challenges and Opportunities </h1></center>
+    <center><h2>ICCV 2025 Workshop</h2></center>
+    <center>TBD, 2025</center>
+  </div>
+</div>
+
+<hr />
+
+
+<!-- <br>
+  <center>
+  <h1 style="color:red"><a href="https://www.youtube.com/watch?v=gyJDGrbLknI">The <b>video recording</b> of this workshop is here!</a></h1>
+  </center>
+<br> -->
+
+<!-- <div class="alert alert-info" role="alert">
+  <b>Join Zoom Meeting  <a href="https://kaust.zoom.us/j/95818223470">here</a>.</b>
+</div> -->
+
+
+
+<div class="row" id="teaser">  
+    <div>  
+    <img src="static/img/site/teaser_b.png" style="width: 100%; height: auto;"/>
+  </div>
+</div>
+
+
+<!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/a.png">
+</div>
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/b.png">
+</div>
+ -->
+
+
+
+
+
+
+<p><br /></p>
+<div class="row" id="intro">
+  <div class="col-xs-12">
+    <h2>Introduction</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Vision foundation models and generative AI have made remarkable progress, unlocking groundbreaking capabilities across various domains. These advances hold immense potential to enhance accessibility by enabling AI-powered assistive technologies that improve the daily lives of individuals with disabilities. However, applying the current state-of-the-art AI models to accessibility poses several key challenges, including bias, data scarcity, interpretability, and real-world deployment limitations.
+
+      This CV4A11y workshop aims to address these challenges, explore emerging research opportunities, and advance the development of more inclusive, efficient, and intelligent accessibility systems. It will provide a platform for discussing cutting-edge research, identifying critical challenges, and fostering collaboration across academia, industry, and accessibility communities. This workshop is highly relevant to computer vision researchers, AI practitioners, HCI experts, and accessibility professionals, as well as anyone interested in developing AI-driven solutions to support individuals with disabilities.    </p>
+  </div>
+</div>
+
+<!-- <p><br /></p>
+<div class="row" id="challenges">
+  <div class="col-xs-12">
+    <h2>Challenges</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      We establish four challenges:
+    </p>
+    <ul>      
+
+      <li>
+        <strong>3D Object Localization</strong>: to predict a bounding box in a 3D scene corresponding to an object described in natural language
+      </li>      
+
+      <li>
+        <strong>Fine-grained 3D Object Identification</strong>: to identify a referred object among multiple objects in a 3D scene given natural or spatial-based language
+      </li>
+
+      <li>
+        <strong>3D Dense Captioning</strong>: to predict the bounding boxes and the associated descriptions in natural language for objects in a 3D scene
+      </li>
+
+      <li>
+        <strong>ScanEnts3D Challenge</strong>: This challenge measures the impact of exploiting the anchor objects found in referential sentences w.r.t. the task of 3D neural listening. 
+      </li>
+    </ul>
+
+    <div class="row" id="tasks">
+      <div class="col-md-6">
+        <img src="static/img/site/localization.jpg" height="180px" />
+        <p style="text-align: center;">3D Object Localization</p>
+      </div>
+      <div class="col-md-6">
+        <img src="static/img/site/identification.png" height="180px"/>
+        <p style="text-align: center;">Fine-grained 3D Object Identification</p>
+      </div>
+    </div>
+
+    <div class="row" id="tasksB">
+      <div class="col-md-12" style="align-content: center;">
+        <img src="static/img/site/captioning.jpg" />
+        <p style="text-align: center;">3D Dense Captioning</p>
+      </div>
+    </div>
+
+    <div class="row" id="tasksC">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <img src="static/img/site/scanents3d.png" />
+        <p style="text-align: center;">ScanEnts3D Challenge</p>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+      
+    
+
+    <p>
+      For each task the challenge participants are provided with prepared training, and test datasets, and automated evaluation scripts. The winner of each task will give a short talk describing their method during this workshop.
+     In addition to the public train-val-test split, benchmarking is done on a hidden test set whose raw data can be downloaded without annotations; 
+      in order to participate in the benchmark, the predictions on the hidden test set are uploaded to the evaluation server, where they are evaluated.      
+    </p>
+
+    <p>
+      The challenge leaderboard is online. If you want to join the challenge, see more details here:
+    </p>
+    <ul>      
+      <li>
+        <strong><b><a href="https://kaldir.vc.in.tum.de/scanrefer_benchmark/benchmark_localization">ScanRefer Challenge</a></b></strong>
+      </li>
+      <li>
+        <strong><b><a href="https://referit3d.github.io/benchmarks.html"> ReferIt3D Challenge</a></b></strong>
+      </li>
+      <li>
+        <strong><b><a href="https://kaldir.vc.in.tum.de/scanrefer_benchmark/benchmark_captioning"> Scan2Cap Challenge</a></b></strong>
+      </li>
+      <li>
+        <strong><b><a href="https://codalab.lisn.upsaclay.fr/competitions/13940"> ScanEnts3D Challenge</a></b></strong>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<p><br /></p> 
+-->
+<p><br /></p> 
+<div class="row" id="cfp">
+  <div class="col-xs-12">
+    <h2>Call For Papers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+      <p>
+        <span style="font-weight:500;">Topics:</span> This workshop will cover, but is not limited to, the following topics at the intersection of computer vision, generative AI, and accessibility:
+      </p>
+      <ul>
+
+        <li> Vision foundation models for accessibility</li>
+        <li> Image and video generation for accessibility</li>
+        <li> Egocentric perception and wearable AI for accessibility</li>
+        <li> Multimodal Large Language Models (MLLMs) for accessibility</li>
+        <li> Efficient foundation models for visual scene perception and understanding</li>
+        <li> Automatic audio description for images and videos</li>
+        <li> Sign language recognition, translation, and production</li>
+        <li> AI-powered assistive technologies in mixed reality (MR)</li>
+        <li> Human-centered evaluation and usability studies of AI-driven accessibility tools</li>
+        <li> Fairness, ethics, and bias mitigation in AI for accessibility</li>
+        <li> Challenges and opportunities in deploying AI-powered assistive systems in real-world settings</li>
+      </ul>
+      <p>
+        <span style="font-weight:500;">Submission:</span> The workshop invite both extended abstract and full paper submissions. We use <a href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/CV4A11y">OpenReview</a> to manage submissions. The submission should be in the ICCV format. Please download the <a href="https://media.eventhosts.cc/Conferences/ICCV2025/ICCV2025-Author-Kit-Feb.zip"> ICCV 2025 Author Kit</a> for detailed formatting instructions.
+        Reviewing will be double-blind. Consistent with the review process for ICCV 2025 main conference, submissions under review will be visible only to their assigned members of the program committee. The reviews and author responses will never be made public. All accepted full papers and extended abstracts will be invited to present a poster. A selection of outstanding full papers will also be invited for oral presentations.
+        <ul>
+        <li> <span style="font-weight:500;">Extended Abstracts:</span> We accept 2-4 page extended abstracts. Accepted extended abstracts will not be published in the conference proceedings, allowing future submissions to archival conferences or journals. We also welcome already published papers that are within the scope of the workshop, including papers from the main ICCV conference.</li>
+        <li><span style="font-weight:500;">Full papers:</span> Papers should be longer than 4 pages but limited to 8 pages, excluding references, following the ICCV style.  Accepted full papers will be published in the ICCV workshop proceedings. </li>  
+      </ul>
+      <p>
+        <span style="color:black;"><strong>Note:</strong></span> Since we are using the same submission system to manage all submissions, we have set the extended abstract deadline:
+        <span style="color:red;"><strong>August 01</strong></span> as the workshop paper submission deadline on Openreview. However, please note that the full paper submission deadline is much earlier—
+        <span style="color:red;"><strong>June 30</strong></span>—as we are required to provide paper information to the ICCV 2025 conference by their deadline.
+      </p>
+      </p>
+  </div>
+</div>                                                                                        
+
+<!-- <p><br /></p>
+<div class="row" id="cfp">
+  <div class="col-xs-12">
+    <h2>Accepted Papers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table>
+      <tbody> 
+      <tr><td><a href="https://arxiv.org/abs/2212.01558">#1. PartSLIP: Low-Shot Part Segmentation for 3D Point Clouds via Pretrained Image-Language Models</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Minghua Liu, Yinhao Zhu, Hong Cai, Shizhong Han, Zhan Ling, Fatih Porikli, Hao Su</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2112.08359">#2. 3D Question Answering</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Shuquan Ye, Dongdong Chen, Songfang Han, Jing Liao</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2211.11682">#3. PointCLIP V2: Prompting CLIP and GPT for Powerful 3D Open-world Learning</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Xiangyang Zhu, Renrui Zhang, Bowei He, Ziyu Guo, Ziyao Zeng, Zipeng Qin, Shanghang Zhang, Peng Gao</font></td> </tr>        
+      <tr><td><a href="https://arxiv.org/abs/2211.16312">#4. PLA: Language-Driven Open-Vocabulary 3D Scene Understanding</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Runyu Ding, Jihan Yang, Chuhui Xue, Wenqing Zhang, Song Bai, Xiaojuan Qi</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2303.16894">#5. ViewRefer: Grasp the Multi-view Knowledge for 3D Visual Grounding</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Zoey Guo, Yiwen Tang, Ray Zhang, Dong Wang, Zhigang Wang, Bin Zhao, Xuelong Li</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2211.15654">#6.  OpenScene: 3D Scene Understanding with Open Vocabularies</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Songyou Peng, Kyle Genova, Chiyu "Max" Jiang, Andrea Tagliasacchi, Marc Pollefeys, Thomas Funkhouser</font></td></tr>
+      <tr><td><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Kurita_RefEgo_Referring_Expression_Comprehension_Dataset_from_First-Person_Perception_of_Ego4D_ICCV_2023_paper.pdf">#7. RefEgo: Referring Expression Comprehension Dataset from First-Person Perception of Ego4D </a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Shuhei Kurita, Naoki Katsura, Eri Onami</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2303.12236">#8. SALAD: Part-Level Latent Diffusion for 3D Shape Generation and Manipulation</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Juil Koo, Seungwoo Yoo, Minh Hieu Nguyen, Minhyuk Sung</font></td></tr>
+      <tr><td><a href="https://3d-vista.github.io">#9. 3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Ziyu Zhu, Xiaojian Ma, Yixin Chen, Zhidong Deng, Siyuan Huang, Qing Li</font></td></tr>
+    </tbody></table>
+  </div>
+
+</div> -->
+
+<p><br /></p>
+
+<div class="row" id="dates">
+  <div class="col-xs-12">
+    <h2>Important Dates</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>Call for papers announced</td>
+          <td>May 12</td>
+        </tr>
+        <tr>
+          <td><span style="color:red;"><strong> Full Paper submission deadline</strong></span> </td>
+          <td>June 30</td>
+        </tr>
+        <tr>
+          <td>Notifications to accepted Full papers</td>
+          <td>July 10 </td>
+        </tr>
+        <tr>
+          <td><span style="color:red;"><strong>Extended Abstract submission deadline</strong></span>  </td>
+          <td>Aug 01</td>
+        </tr>
+        <tr>
+          <td>Notifications to accepted Extended abstract papers</td>
+          <td>Aug 10</td>
+        </tr>
+        <tr>
+          <td>Camera-ready deadline for accepted full and Extended abstract papers</td>
+          <td>Aug 16</td>
+        </tr>
+        <tr>
+          <td>Workshop date</td>
+          <td>TBA</td>
+        </tr>
+      
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="schedule">
+  <div class="col-xs-12">
+    <h2>Schedule (Hawaii Standard Time)</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    TBA
+     <!-- <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>Welcome</td>
+          <td>2:00pm - 2:05pm / 5:00am - 4:05am</td>
+        </tr>
+        <tr>
+          <td>Invited Talk (Rana Hanocka)</td>
+          <td>2:05pm - 2:30pm / 5:05am - 5:30am</td>
+        </tr>
+        <tr>
+          <td>Presentation of challenge winners</td>
+          <td>2:30pm - 2:55pm / 5:30am - 5:55am</td>
+        </tr>
+        <tr>
+          <td>Poster session / Coffee break</td>
+          <td>3:00pm - 3:25pm / 6:00am - 6:25am</td>
+        </tr>
+        <tr>
+          <td>Invited Talk (Chris Paxton)</td>
+          <td>3:30pm - 4:00pm / 6:30am - 7:00am</td>
+        </tr>
+        <tr>
+          <td>Invited Talk (Or Litany)<br/>Talking to walls (...and other semantic categories)</td>
+          <td>4:00pm - 4:25pm / 7:00am - 7:25am</td>
+        </tr>
+        <tr>
+          <td>Paper spotlights</td>
+          <td>4:30pm - 4:55pm / 7:30am - 7:55am</td>
+        </tr>
+        <tr>
+          <td>Panel discussion</td>
+          <td>5:00pm - 5:40pm / 8:00am - 8:40am</td>
+        </tr>
+        <tr>
+          <td>Concluding Remarks</td>
+          <td>5:40pm - 5:50pm / 8:40am - 8:50am</td>
+        </tr>
+      </tbody>
+    </table> -->
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="speakers">
+  <div class="col-xs-12">
+    <h2>Invited Speakers (Tentative)</h2>
+  </div>
+</div>
+
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.cmu.edu/~jbigham/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://www.cs.cmu.edu/~jbigham/pics/jbigham-2023.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.cmu.edu/~jbigham/">Jeffrey P. Bigham</a></b> is an Associate Professor at Carnegie Mellon University (CMU) and a world-renowned expert in HCI, AI, and accessibility. He has received numerous prestigious awards, including the Sloan Fellowship, the MIT Technology Review Top 35 Innovators Under 35 Award, and the NSF CAREER Award. In addition to his academic role, he leads the Human-Centered Machine Intelligence Group at Apple, focusing on accessibility, AI fairness, machine learning design, learning sciences, information visualization, and computational UI understanding. He also leads VizWiz, a pioneering computer vision for accessibility project that allows blind and visually impaired individuals to receive real-time answers to questions about their surroundings.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://gulvarol.github.io/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://gulvarol.github.io/img/gul.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://gulvarol.github.io/">Gül Varol</a></b> is a permanent researcher (Assoc. Prof.) in the IMAGINE group at École des Ponts ParisTech. Previously, she was a postdoctoral researcher at the University of Oxford (VGG), working with Andrew Zisserman. She regularly serves as an Area Chair at major computer vision conferences and has served as a Program Chair at ECCV'24. She is an associate editor for IJCV and was in the award committee for ICCV'23. She has co-organized a number of workshops at CVPR, ICCV, ECCV, and NeurIPS. Her research interests cover vision and language applications, including video representation learning, human motion synthesis, and sign languages. 
+    </p>
+  </div>
+</div>
+
+
+<p><br /></p>
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://xiaoyizhang.me/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://xiaoyizhang.me/assets/img/profile.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://xiaoyizhang.me/">Xiaoyi Zhang</a></b> is a Member of Technical Staff at Anthropic, focusing on HCI+AI research. Previously, he was a Staff Researcher & Manager at Apple, playing a key role in launching Apple Intelligence and Vision Pro. He developed Screen Recognition, an AI-powered iOS accessibility feature that has improved digital access for over 20 million blind users. His research spans HCI, ML developer tools, model optimization, and UI accessibility. 
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://jaewook-lee.com/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://media.licdn.com/dms/image/v2/D5603AQFfH7p1LatgKQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1677383050832?e=2147483647&v=beta&t=CBvvgmrw-l9Krofx9wqHH5iPLXTSLQDwGdjzZupbrXY" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://jaewook-lee.com/">Jaewook Lee</a></b> is a senior Ph.D. student at UW. His research intersects Augmented Reality (AR), Human-AI Interaction, and Accessibility, focusing on designing context-aware AR solutions to assist both the general public and communities such as blind or low vision (BLV) and deaf or hard of hearing individuals. Notably, he has developed ARSports, a wearable AR prototype aimed at enhancing sports accessibility for people with low vision, and CookAR, an AR system designed to support safe kitchen tool interactions for individuals with low vision. 
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://toby.li/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://toby.li/images/toby_profile.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://toby.li/">Toby Jia-Jun Li</a></b> is an Assistant Professor in the Department of Computer Science and Engineering at the University of Notre Dame, where he leads the SaNDwich Lab. He also serves as the Director of the Human-Centered Responsible AI Lab in the Lucy Family Institute for Data & Society.
+      Toby works at the intersection of Human-Computer Interaction, End-User Software Engineering, Machine Learning, and Natural Language Processing applications, where he uses human-centered methods to design, build, and study interactive systems to empower individuals to create, configure, and extend AI-powered computing systems. 
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://inclusivedesignlabuw.github.io/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://inclusivedesignlabuw.github.io/images/people/leah.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://inclusivedesignlabuw.github.io/">Leah Findlater</a></b> is an Associate Professor in Human Centered Design and Engineering at the University of Washington. She is also an affiliate professor in Disability Studies and an associate director of UW Center for Research and Education on Accessible Technology and Experiences. She received an NSF CAREER Award in 2014.
+      She is one of leading experts in AI for accessibility, developing AI-powered solutions to support individuals with motor impairments, blindness and low vision, hearing disabilities, and communication disorders.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+  
+</div>
+
+<!-- <p><br /></p>
+<div class="row" id="speakers">
+  <div class="col-xs-12">
+    <h2>Panelists</h2>
+  </div>
+</div> -->
+
+<!-- <div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cc.gatech.edu/~dbatra/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/batra.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cc.gatech.edu/~dbatra/">Dhruv Batra</a></b> is an Associate Professor in the School of
+      Interactive Computing at Georgia Tech and a Research Scientist at Facebook AI Research (FAIR).
+      His research interests lie at the intersection of machine learning, computer vision, natural language processing,
+      and AI. The long-term goal of his research is to develop agents that 'see' (or more generally
+      perceive their environment through vision, audition, or other senses), 'talk' (i.e. hold a natural language dialog
+      grounded in their environment), 'act' (e.g. navigate their environment and interact with it to accomplish goals),
+      and 'reason' (i.e., consider the long-term consequences of their actions).
+      He is a recipient of the Presidential Early Career Award for Scientists and Engineers (PECASE) 2019.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.cmu.edu/~katef/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/fragk.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></b> is an Assistant Professor in the Machine Learning Department at Carnegie Mellon.
+      Prior to joining MLD's faculty she worked as a postdoctoral researcher first at UC Berkeley working with Jitendra Malik and then
+      at Google Research in Mountain View working with the video group. Katerina is interested in building machines that understand the
+      stories that videos portray, and, inversely, in using videos to teach machines about the world. The penultimate goal is
+      to build a machine that understands movie plots, and the ultimate goal is to build a machine that would want to watch Bergman over this.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.utexas.edu/~mooney/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/mooney_raymond.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.utexas.edu/~mooney/">Raymond Mooney</a></b> is a Professor in the Department of Computer Science at the University of Texas at Austin. He received his Ph.D. in 1988 from the University of Illinois at Urbana/Champaign. He is an author of over 160 published research papers, primarily in the areas of machine learning and natural language processing. He was the President of the International Machine Learning Society from 2008-2011, program co-chair for AAAI 2006, general chair for HLT-EMNLP 2005, and co-chair for ICML 1990. He is a Fellow of the American Association for Artificial Intelligence, the Association for Computing Machinery, and the Association for Computational Linguistics and the recipient of best paper awards from AAAI-96, KDD-04, ICML-05 and ACL-07.
+    </p>
+  </div>
+</div>
+<p><br /></p> -->
+
+<p><br /></p>
+
+<div class="row" id="organizers">
+  <div class="col-xs-12">
+    <h2>Organizers</h2>
+  </div>
+</div>
+
+<div class="row">
+
+ <div class="col-xs-2 text-center">
+    <a href="https://www.yapengtian.com/">
+      <img class="people-pic" src="https://www.yapengtian.com/assets/profile-pics/YapengTian.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://www.yapengtian.com/">Yapeng Tian</a>
+      <h6>University of Texas at Dallas</h6>
+    </div>
+  </div> 
+
+  <div class="col-xs-2 text-center">
+    <a href="https://www.yuhangz.com/">
+      <img class="people-pic" src="https://www.yuhangz.com/assets/img/Yuhang_Zhao-800.webp" />
+    </a>
+    <div class="people-name">
+      <a href="https://www.yuhangz.com/">Yuhang Zhao</a>
+      <h6>University of Wisconsin–Madison</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2 text-center">
+    <a href="https://jonfroehlich.github.io/">
+      <img class="people-pic" src="https://jonfroehlich.github.io/assets/images/JonFroehlich_PhotoByDennisWise.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://jonfroehlich.github.io/">Jon E. Froehlich</a>
+      <h6>University of Washington</h6>
+    </div>
+  </div> 
+
+  <div class="col-xs-2 text-center">
+    <a href="https://www.chu-li.me/">
+      <img class="people-pic" src="static/img/people/chuli.jpeg" />
+    </a>
+    <div class="people-name ">
+      <a href="https://www.chu-li.me/">Chu Li</a>
+      <h6>University of Washington</h6>
+    </div>
+  </div> 
+
+  <div class="col-xs-2 text-center">
+    <a href="https://iamwyh.com/">
+      <img class="people-pic" src="https://iamwyh.com/images/photo-1.jpg" />
+    </a>
+    <div class="people-name ">
+      <a href="https://iamwyh.com/">Yuheng Wu</a>
+      <h6>University of Wisconsin–Madison</h6>
+    </div>
+  </div> 
+
+ 
+
+</div>
+
+<!-- <div class="row" id="advisors">
+  <div class="col-xs-12">
+    <h2>Senior Advisors</h2>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-xs-2">
+    <a href="http://optas.github.io">
+      <img class="people-pic" src="static/img/people/achlioptas.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="http://optas.github.io">Panos Achlioptas</a>
+      <h6>Steel Perlot</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://angelxuanchang.github.io/">
+      <img class="people-pic" src="static/img/people/angel.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://angelxuanchang.github.io/">Angel X. Chang</a>
+      <h6>Simon Fraser University</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://niessnerlab.org/members/matthias_niessner/profile.html">
+      <img class="people-pic" src="static/img/people/matthias.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://niessnerlab.org/members/matthias_niessner/profile.html">Matthias Niessner</a>
+      <h6>Technical University of Munich</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://geometry.stanford.edu/member/guibas/">
+      <img class="people-pic" src="static/img/people/guibas.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://geometry.stanford.edu/member/guibas/">Leonidas J. Guibas</a>
+      <h6>Stanford University</h6>
+    </div>
+  </div>
+</div> -->
+
+<p><br /></p>
+
+<div class="row" id="contact">
+  <div class="col-xs-12">
+    <h2>Contact</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      To contact the organizers please use <b>cv4a11y.workshop@gmail.com</b>.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<hr />
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Acknowledgments</h2>
+  </div>
+</div>
+<p><a name="/acknowledgements"></a></p>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Thanks to <span style="color:#1a1aff;font-weight:400;"> <a href="https://languagefor3dscenes.github.io/">https://languagefor3dscenes.github.io/</a></span> for the webpage format.
+    </p>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
